@@ -1,3 +1,571 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+
+/* Centering body */
+
+.container{
+	width: 814px;
+	margin: 0 auto;
+}
+
+/* Navigation bar */
+
+.navDiv {
+	display: flex;
+	justify-content: flex-start;	
+	width: 100%;
+	background-color:white;
+	padding: 3% 0;
+
+}
+nav{
+	width: 80%;
+	display: flex;
+	justify-content: space-evenly;
+}
+nav a{
+	text-decoration: none;
+	color: rgba(201, 201, 202, 0.842);
+
+	font-weight: bolder;
+	padding: 2% 2% 0 0 ;
+	margin: 0 auto;
+	
+}
+
+
+
+nav a:hover{
+	color: black;
+}
+
+
+/* Logo title area and header image */
+
+.title-section {
+	padding: 4% 0 8% 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.title-section div{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	padding: 11% 0 0 0;
+}
+
+.title-section div h1{
+	font-size: 5rem;
+	text-align: center;
+}
+.title-section div a{
+	margin: 3% auto;
+	
+	padding: 1% 15%;
+	font-size: 1rem;
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	text-align: center;
+}
+
+
+
+
+
+
+.title-section div a:hover{	
+	font-weight: 600;
+}
+
+
+
+/* Features, About, and accent image aka upper info*/
+
+.features {
+
+	border-top: 1px solid black;
+	padding: 3% 0 4% 0;
+	font-size: 20px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.features div{
+	
+	width: 49%;
+}
+.features h2{
+	padding: 4% 0;
+	font-size: 1.26rem;
+}
+.features p{
+	font-size: 1rem;
+}
+.features p, .features h2{
+	margin: 0 2%;
+}
+
+.middle-img{
+	width: 100%;
+}
+/* services, product, and vision aka lower info */
+
+.services {
+
+	border-bottom: 1px solid black;
+	padding: 3% 0;
+	font-size: 1rem;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.services div{
+	width: 35%;
+	padding: 3% 0 0 0;
+	
+}
+.services h2{
+	padding-bottom: 4%;
+}
+
+.services p, .services h2{
+	margin: 0 2%;
+}
+
+
+
+/* contact list */
+
+.contact{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 3%;
+	
+}
+.contact p, .contact h2{	
+	margin: 0;
+	padding: 2% 0;
+}
+
+/* footer */
+
+footer {
+	text-align: center;
+}
+
+
+
+/* Features Page */
+
+
+.featureTitle{
+	margin-top: 70px;
+	font-size: 100px;
+	text-align: center;
+}
+
+
+
+
+.featureSection{
+	width: 63%;
+	padding: 30px 0 30px 0;
+	border-bottom: 1px solid black;	
+	border-top: 1px solid black;	
+	margin-left: 25px;
+
+}
+
+
+
+.featureImg{
+	width: 33.33%;	
+	margin-top: 88px;
+	padding: 22px 0 22px 50px ;
+ 
+	
+
+}
+
+.featureSection,
+.featureImg {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.featureImg img{
+	height: 300px;
+	width: 200px;
+	object-fit: cover;
+	margin: -66px 0 22px 0;
+	vertical-align: top;
+}
+
+
+/* services */
+
+.services-header-img{
+	width: 100%;
+}
+
+
+.servicesHeader{
+	padding-bottom: 4%;
+	border-bottom: 1px black solid;
+	margin-bottom: 3%;
+}
+
+
+.servicesHeader h1{
+	font-size: 1.3rem;
+
+}
+
+
+.serviceBoxes {
+	
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.serviceBoxes div{	
+	width: 45%;
+
+	border: 1px solid black;
+	margin: 1% auto;
+	background-color:#F4F3F4;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.serviceBoxes div a{
+	padding: 2px 8%;
+	background-color: white;
+	border: 1px black solid;
+	border-radius: 7%;
+	margin: auto;
+	text-decoration: none;
+	color: black;
+
+
+}
+.serviceBoxes div a:hover{
+	background-color: black;
+	color: white;
+}
+
+
+.serviceBoxes div p,.serviceBoxes div h2{
+	padding: 5px 2% 5% 0;
+}
+
+
+.servicesFacts {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	padding-top: 40px;
+	border-top: 1px black solid;
+	padding-bottom: 10%;
+}
+
+.servicesFacts div{
+	display: flex;
+	flex-direction: column;
+}
+
+.servicesFacts div p{
+
+	padding: 2% 0;
+	width: 80%;
+}
+
+.servicesFacts div ul{
+	padding-top: 3%;
+	list-style-type: square;
+	margin-left: 5%;
+}
+.servicesFacts div ul li{
+	padding: 1% 0;
+}
+
+
+/* visions */
+
+.visionHeader{
+	padding: 20% 0;
+	background-image: url('../img/vision 1.jpg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: 60px;
+	font-size: 60px;
+	
+	vertical-align: middle;
+
+}
+
+.visionHeader h1{
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	
+}
+
+
+.visionAbout{
+	display: flex;
+	justify-content: space-around;
+	padding: 5% 5% 5% 5%;
+	border-bottom: 1px black solid;
+}
+
+.visionAbout div{
+	display: flex;
+	align-content: space-around;
+	flex-direction: column;
+	width: 55%;
+}
+.visionAbout img{
+	width: 40%;
+}
+
+.visionAbout div div{
+	padding: 2% 0;
+}
+
+.visionVisonary {
+	margin-top: 6%;
+	margin-bottom: 3%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	padding-bottom: 6%;
+	border-bottom: 1px black solid;
+}
+.visionVisonary div{
+	
+	width: 30%;
+	text-align: center;
+
+}
+
+.visionVisonary div h2{
+	padding: 4% 0 0% 0;
+}
+
+.visionVisonary div img{
+	border-radius: 50%;
+	height: 150px
+}
+
+
+/* Media Break points */
+
+@media (max-width: 800px){
+	.container{
+		max-width: 100%;
+	}
+	.containerSequel{
+		max-width: 90%;
+		margin: 0 auto;
+		
+	}
+	.navDiv{
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+	nav{
+		width: 100%;
+	}
+	.navDiv a{
+		padding: 2% 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.title-section img{
+		display: none;
+	}
+	.title-section div{
+		padding: 0;	
+	}
+	.title-section div{
+		width:100%;
+	}
+	.title-section div a{
+		padding: 1% 8%;
+	}
+
+	/* services */
+	.serviceBoxes div{
+	padding: 2% 0;
+	}
+	
+}
+
+@media (max-width: 500px){
+	.container{
+		max-width: 100%;
+		
+	}
+	.navDiv{
+	
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+	nav{
+	
+		display: flex;
+		flex-direction: column;
+	}
+	.navDiv a{
+	
+		text-align: center;
+		padding: 4%;	
+		border-bottom: 1px solid black;
+	}
+	.containerSequel{
+		max-width: 90%;
+		margin: 0 auto;
+		
+	}
+
+	
+	.features, .title-section{
+		background-image: none;
+	}
+
+	.features{
+		flex-wrap: wrap;
+		padding-bottom: 5%;
+
+	}
+	.features div{
+		width: 100%;
+	}
+
+	.contact h2, .contact p{
+		
+		margin-bottom: 3%;
+	}
+
+	.features div, .services div{
+		padding: 4% 0;
+	}
+	.services{
+	flex-wrap: wrap;
+	}
+
+	.services div{
+		width: 100%
+	}
+	.services h2{
+		font-size:1.2rem;
+		
+	}
+
+	.services p{
+		font-size: 1rem;
+	}
+
+	.services h2{
+		font-size:1.2rem;
+		
+	}
+
+	.services p{
+		font-size: 1rem;
+	}
+
+/* services */
+	.serviceBoxes div{
+	width: 100%;
+	}
+	
+	.services-info-img,.services-header-img{
+		display: none;
+	}
+	.servicesFacts {
+		text-align: left;
+	}
+	
+}
+
+
